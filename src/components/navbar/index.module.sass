@@ -1,0 +1,60 @@
+@import "/src/mixins"
+
+.header
+  @include container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-top: 15px
+  padding-bottom: 15px
+
+  h1
+    font-weight: 900
+
+  &__weatherSearch
+    display: flex
+    align-items: center
+    @media (max-width: 767px)
+      display: none
+
+    input
+      width: 250px
+      background-color: #292929
+      padding: 11px 20px
+      color: #fff
+      border: none
+      outline: none
+      border-radius: 50px
+      margin-right: -50px
+
+    button
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 70px
+      padding: 10px
+      background-color: #007bff
+      color: #fff
+      border: none
+      border-radius: 50px
+      cursor: pointer
+      transition: 1s
+      font-size: 15px
+
+      &:hover
+        transition: 1s
+        background-color: blue
+
+  &__historyBtn
+    padding: 10px
+    background-color: #007bff
+    color: #fff
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    transition: 1s
+    font-weight: 700
+
+    &:hover
+      transition: 1s
+      background-color: blue

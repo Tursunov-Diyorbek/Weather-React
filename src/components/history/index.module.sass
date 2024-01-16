@@ -1,0 +1,46 @@
+@import "/src/mixins"
+
+.history
+  @include container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+  &__cards
+    width: 19%
+    min-height: 200px
+    background-color: #292929
+    padding: 20px
+    border-radius: 10px
+    margin-top: 20px
+    @media (max-width: 991px)
+      width: 32%
+
+    @media (max-width: 767px)
+      width: 100%
+
+  &__header
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin-bottom: 20px
+
+    img
+      width: 40%
+
+    div
+      text-align: center
+
+      p
+        font-weight: 900
+
+  &__date
+    font-size: 10px
+    color: #666
+
+  &__section
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 13px

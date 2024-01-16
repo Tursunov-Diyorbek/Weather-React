@@ -5,7 +5,7 @@ import { ContextData } from "../../context/context";
 import { CiSearch } from "react-icons/ci";
 import dayjs from "dayjs";
 
-const API_KEY = "8b20acc8341736c900f949c7de6499fa";
+const API_KEY = "fc09471fb98a9bb19467c691b62feb70";
 
 export default function Body() {
   const { cityName, setCityName, valueCity, setValueCity, setHistoryData } =
